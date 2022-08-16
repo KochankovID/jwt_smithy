@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jwt_smithy"
-version = "1.0.0"
+version = "1.1.0"
 description = "Simple cli tool for jwt keys generation"
 homepage = "https://github.com/KochankovID/jwt_smithy"
 repository = "https://github.com/KochankovID/jwt_smithy"
@@ -12,6 +12,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+
+[tool.poetry.scripts]
+smithy = 'jwt_smithy.__main__:app'
 
 [tool.poetry.dependencies]
 python = "^3.10"
